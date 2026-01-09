@@ -135,4 +135,9 @@ docker exec -it llm_robot_container gzclient
     ```
 
 ## 📄 License
+
 This project is licensed under the MIT License.
+
+DEMO GIF:
+![unknown_2026 01 09-21 08_1](https://github.com/user-attachments/assets/8e6fad13-a266-418e-96e6-5f5fdb2b05ce)
+
