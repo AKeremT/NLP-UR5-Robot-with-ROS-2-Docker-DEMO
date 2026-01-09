@@ -1,9 +1,0 @@
-setup.py
-llm_robot_control/__init__.py
-llm_robot_control.egg-info/PKG-INFO
-llm_robot_control.egg-info/SOURCES.txt
-llm_robot_control.egg-info/dependency_links.txt
-llm_robot_control.egg-info/top_level.txt
-llm_robot_control/msg/__init__.py
-llm_robot_control/msg/_robot_command.py
-llm_robot_control/msg/_safety_status.py
