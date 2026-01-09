@@ -54,3 +54,50 @@ Since Docker runs in a Linux container, we need an X Server to display the GUI (
 ```bash
 git clone [https://github.com/AKeremT/Natural-Language-Controlled-UR5-Robot-with-ROS-2-Docker.git](https://github.com/AKeremT/Natural-Language-Controlled-UR5-Robot-with-ROS-2-Docker.git)
 cd Natural-Language-Controlled-UR5-Robot-with-ROS-2-Docker# Natural-Language-Controlled-UR5-Robot-with-ROS-2-Docker
+```
+### 2. Network Configuration (Crucial!)
+Docker needs to know where to send the display output. We use a `.env` file for this configuration to keep it dynamic.
+
+1.  Create a `.env` file from the example:
+    ```bash
+    cp .env.example .env
+    ```
+2.  Find your computer's IP address:
+    * **Windows:** Open CMD, type `ipconfig`. Copy the **IPv4 Address** of your **Wi-Fi** or **Ethernet** adapter. (Do NOT use the WSL adapter IP).
+    * **Linux:** Usually you can skip this or use `localhost`.
+3.  Edit the `.env` file:
+    ```bash
+    nano .env
+    ```
+    Paste your IP address:
+    ```ini
+    DISPLAY_IP=192.168.1.35  <-- Replace with YOUR actual IP
+    ```
+
+### 3. Configure LM Studio (The Brain)
+1.  Open LM Studio and go to the **Local Server** tab (`<->` icon on the left).
+2.  Select your downloaded model at the top.
+3.  **Server Settings (Right Panel):**
+    * **Port:** `1234`
+    * ✅ **Enable CORS** (Cross-Origin Resource Sharing) -> *Must be ON*.
+4.  Click **"Start Server"**.
+
+### 4. Configure VcXsrv (Windows Users)
+Launch **XLaunch** and use these exact settings to avoid connection errors:
+
+1.  **Display settings:** Multiple windows -> *Next*
+2.  **Client startup:** Start no client -> *Next*
+3.  **Extra settings:**
+    * ✅ **Clipboard**
+    * ✅ **Disable access control** (Critical! If unchecked, Docker cannot connect).
+4.  **Finish**.
+
+---
+
+## 🏃‍♂️ Usage
+
+Run the entire system with a single command:
+
+```bash
+docker compose up
+```
