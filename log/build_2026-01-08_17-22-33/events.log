@@ -1,0 +1,70 @@
+[0.000000] (-) TimerEvent: {}
+[0.001309] (-) JobUnselected: {'identifier': 'moveit_resources'}
+[0.001896] (-) JobUnselected: {'identifier': 'moveit_resources_fanuc_description'}
+[0.002069] (-) JobUnselected: {'identifier': 'moveit_resources_fanuc_moveit_config'}
+[0.002157] (-) JobUnselected: {'identifier': 'moveit_resources_panda_description'}
+[0.002175] (-) JobUnselected: {'identifier': 'moveit_resources_panda_moveit_config'}
+[0.002186] (-) JobUnselected: {'identifier': 'moveit_resources_pr2_description'}
+[0.002259] (-) JobUnselected: {'identifier': 'ur'}
+[0.002445] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.002860] (-) JobUnselected: {'identifier': 'ur_calibration'}
+[0.003017] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.003037] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.003052] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.003115] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.003146] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.003192] (llm_robot_control) JobQueued: {'identifier': 'llm_robot_control', 'dependencies': OrderedDict()}
+[0.003215] (llm_robot_control) JobStarted: {'identifier': 'llm_robot_control'}
+[0.017756] (llm_robot_control) JobProgress: {'identifier': 'llm_robot_control', 'progress': 'cmake'}
+[0.019053] (llm_robot_control) JobProgress: {'identifier': 'llm_robot_control', 'progress': 'build'}
+[0.020054] (llm_robot_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/akerem1427/ros2_ws/build/llm_robot_control', '--', '-j8', '-l8'], 'cwd': '/home/akerem1427/ros2_ws/build/llm_robot_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akerem1427'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/akerem1427/ros2_ws/install/ur_dashboard_msgs/lib:/home/akerem1427/ros2_ws/install/llm_robot_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akerem1427'), ('OLDPWD', '/home/akerem1427'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/akerem1427/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akerem1427'), ('NAME', 'AKT'), ('WSL_INTEROP', '/run/WSL/670_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/akerem1427/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/AKT/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/AKT/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/AKT/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/AKT/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/AKT/AppData/Local/Programs/Ollama:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2024.3/bin:/mnt/c/Users/AKT/.cache/lm-studio/bin:/mnt/c/Users/AKT/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/MinGW/bin:/mnt/c/Users/AKT/AppData/Local/GitHubDesktop/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin:/mnt/c/Users/AKT/AppData/Roaming/npm:/mnt/c/Users/AKT/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/akerem1427/ros2_ws/install/ur_moveit_config:/home/akerem1427/ros2_ws/install/ur_description:/home/akerem1427/ros2_ws/install/ur_dashboard_msgs:/home/akerem1427/ros2_ws/install/moveit_resources:/home/akerem1427/ros2_ws/install/moveit_resources_pr2_description:/home/akerem1427/ros2_ws/install/moveit_resources_panda_moveit_config:/home/akerem1427/ros2_ws/install/moveit_resources_panda_description:/home/akerem1427/ros2_ws/install/moveit_resources_fanuc_moveit_config:/home/akerem1427/ros2_ws/install/moveit_resources_fanuc_description:/home/akerem1427/ros2_ws/install/llm_robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/akerem1427/ros2_ws/build/llm_robot_control'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/home/akerem1427/ros2_ws/install/ur_moveit_config/local/lib/python3.10/dist-packages:/home/akerem1427/ros2_ws/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages:/home/akerem1427/ros2_ws/install/llm_robot_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('MESA_GLSL_VERSION_OVERRIDE', '330'), ('CMAKE_PREFIX_PATH', '/home/akerem1427/ros2_ws/install/ur_moveit_config:/home/akerem1427/ros2_ws/install/ur_description:/home/akerem1427/ros2_ws/install/ur_dashboard_msgs:/home/akerem1427/ros2_ws/install/moveit_resources:/home/akerem1427/ros2_ws/install/moveit_resources_pr2_description:/home/akerem1427/ros2_ws/install/moveit_resources_panda_moveit_config:/home/akerem1427/ros2_ws/install/moveit_resources_panda_description:/home/akerem1427/ros2_ws/install/moveit_resources_fanuc_moveit_config:/home/akerem1427/ros2_ws/install/moveit_resources_fanuc_description:/home/akerem1427/ros2_ws/install/llm_robot_control'), ('WSLENV', '')]), 'shell': False}
+[0.098528] (-) TimerEvent: {}
+[0.135029] (llm_robot_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.198796] (-) TimerEvent: {}
+[0.267534] (llm_robot_control) StdoutLine: {'line': b'-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.267974] (llm_robot_control) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.299887] (-) TimerEvent: {}
+[0.381979] (llm_robot_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.385128] (llm_robot_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.392386] (llm_robot_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.400187] (-) TimerEvent: {}
+[0.403555] (llm_robot_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.416380] (llm_robot_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.438684] (llm_robot_control) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.502238] (-) TimerEvent: {}
+[0.547768] (llm_robot_control) StdoutLine: {'line': b'-- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)\n'}
+[0.604047] (-) TimerEvent: {}
+[0.640802] (llm_robot_control) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.706123] (-) TimerEvent: {}
+[0.805783] (llm_robot_control) StderrLine: {'line': b"Error parsing '/home/akerem1427/ros2_ws/src/llm_robot_control/package.xml':\n"}
+[0.806217] (-) TimerEvent: {}
+[0.848426] (llm_robot_control) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.848556] (llm_robot_control) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[0.848592] (llm_robot_control) StderrLine: {'line': b'    main()\n'}
+[0.848620] (llm_robot_control) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[0.848646] (llm_robot_control) StderrLine: {'line': b'    raise e\n'}
+[0.848706] (llm_robot_control) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[0.848750] (llm_robot_control) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[0.848795] (llm_robot_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string\n'}
+[0.848940] (llm_robot_control) StderrLine: {'line': b"    raise InvalidPackage('Error(s):%s' % (''.join(['\\n- %s' % e for e in errors])), filename)\n"}
+[0.848987] (llm_robot_control) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/akerem1427/ros2_ws/src/llm_robot_control/package.xml':\n"}
+[0.849016] (llm_robot_control) StderrLine: {'line': b'Error(s):\n'}
+[0.849042] (llm_robot_control) StderrLine: {'line': b"- The generic dependency on 'moveit_msgs' is redundant with: exec_depend\n"}
+[0.858708] (llm_robot_control) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[0.859731] (llm_robot_control) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[0.859798] (llm_robot_control) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[0.859841] (llm_robot_control) StderrLine: {'line': b'  /home/akerem1427/ros2_ws/src/llm_robot_control/package.xml\n'}
+[0.859880] (llm_robot_control) StderrLine: {'line': b'  /home/akerem1427/ros2_ws/build/llm_robot_control/ament_cmake_core/package.cmake)\n'}
+[0.859914] (llm_robot_control) StderrLine: {'line': b'  returned error code 1\n'}
+[0.859952] (llm_robot_control) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.859993] (llm_robot_control) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[0.860025] (llm_robot_control) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)\n'}
+[0.860050] (llm_robot_control) StderrLine: {'line': b'  CMakeLists.txt:20 (rosidl_generate_interfaces)\n'}
+[0.860075] (llm_robot_control) StderrLine: {'line': b'\n'}
+[0.860100] (llm_robot_control) StderrLine: {'line': b'\x1b[0m\n'}
+[0.860128] (llm_robot_control) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.860169] (llm_robot_control) StdoutLine: {'line': b'See also "/home/akerem1427/ros2_ws/build/llm_robot_control/CMakeFiles/CMakeOutput.log".\n'}
+[0.867028] (llm_robot_control) StderrLine: {'line': b'gmake: *** [Makefile:963: cmake_check_build_system] Error 1\n'}
+[0.869592] (llm_robot_control) CommandEnded: {'returncode': 2}
+[0.869813] (llm_robot_control) JobEnded: {'identifier': 'llm_robot_control', 'rc': 2}
+[0.880349] (-) EventReactorShutdown: {}

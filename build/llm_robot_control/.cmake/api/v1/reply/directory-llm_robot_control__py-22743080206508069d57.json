@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "llm_robot_control__py",
+		"source" : "/home/akerem1427/ros2_ws/build/llm_robot_control/llm_robot_control__py"
+	}
+}

@@ -1,0 +1,5 @@
+gmake[2]: *** [CMakeFiles/test_load_freedrive_mode_controller.dir/build.make:76: CMakeFiles/test_load_freedrive_mode_controller.dir/test/test_load_freedrive_mode_controller.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/test_load_force_mode_controller.dir/build.make:76: CMakeFiles/test_load_force_mode_controller.dir/test/test_load_force_mode_controller.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:481: CMakeFiles/test_load_freedrive_mode_controller.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/test_load_force_mode_controller.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

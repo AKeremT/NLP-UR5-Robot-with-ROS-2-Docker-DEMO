@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  llm_robot:
+    build: .
+    container_name: llm_robot_container
+    # Bu ayar, Docker'ın Windows IP'sini bulmasını sağlar
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    privileged: true
+    environment:
+      # BURAYI DEĞİŞTİR: host.docker.internal YERİNE IP ADRESİNİ YAZ
+      # Örnek: DISPLAY=192.168.1.35:0.0
+      - DISPLAY=${DISPLAY_IP}:0.0
+      - LIBGL_ALWAYS_SOFTWARE=1
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - ./src:/root/ros2_ws/src
+    working_dir: /root/ros2_ws
+    # Eski komutun aynısı
+    command: >
+      bash -c "colcon build && 
+               source install/setup.bash && 
+               ros2 launch llm_robot_control llm_robot_system.launch.py"

@@ -1,0 +1,7 @@
+{
+  "package_name": "llm_robot_control",
+  "non_idl_tuples": [
+    "/home/akerem1427/ros2_ws/src/llm_robot_control:msg/RobotCommand.msg",
+    "/home/akerem1427/ros2_ws/src/llm_robot_control:msg/SafetyStatus.msg"
+  ]
+}
