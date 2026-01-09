@@ -101,3 +101,38 @@ Run the entire system with a single command:
 ```bash
 docker compose up
 ```
+
+*The first run will take a few minutes to build the Docker image.*
+
+### What to Expect:
+1.  **RViz Window:** Opens automatically. Shows the robot model and planning scene.
+2.  **Xterm Window:** A small terminal window for input.
+3.  **Gazebo:** Runs in the background (Headless) by default to save resources.
+
+**To see the Gazebo Simulation Window:**
+Open a new terminal and run:
+```bash
+docker exec -it llm_robot_container gzclient
+```
+---
+
+## 🔧 Troubleshooting
+
+**1. "Can't open display: 192.168.x.x:0.0"**
+* Is **VcXsrv** running?
+* Did you check **"Disable access control"** in VcXsrv settings?
+* Is the IP in `.env` correct? (IPs can change if you restart your router).
+* **Firewall:** Ensure Windows Firewall allows VcXsrv on both Private and Public networks.
+
+**2. Gazebo/RViz windows are black or flickering**
+* The `docker-compose.yml` is configured with `LIBGL_ALWAYS_SOFTWARE=1` for maximum compatibility (especially for AMD GPUs/WSL). Do not remove this unless you have configured NVIDIA Container Toolkit.
+
+**3. "ContainerConfig" Error during startup**
+* If you changed `docker-compose.yml` significantly, you might need to rebuild cleanly:
+    ```bash
+    docker compose down
+    docker compose up --build --force-recreate
+    ```
+
+## 📄 License
+This project is licensed under the MIT License.
